@@ -11,6 +11,8 @@ passwd root
 Now SSH is ready !
 
 test
+  test
+
 ``` 
-hello 
+parted -a optimal /dev/sda
 ```
