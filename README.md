@@ -87,8 +87,9 @@ tar xpvf stage3-*.tar.xz --xattrs-include='*.*' --numeric-owner
 Editing Flags :
 
 ```
-nano /gentoo/mnt/etc/portage/make.conf
+nano /mnt/gentoo/etc/portage/make.conf
 ```
+
 Add "-march=native" to below line :
 
 COMMON_FLAGS="-O2 -pipe"
