@@ -105,7 +105,7 @@ mkdir --parents /mnt/gentoo/etc/portage/repos.conf
 ```
 cp /mnt/gentoo/usr/share/portage/config/repos.conf /mnt/gentoo/etc/portage/repos.conf/gentoo.conf
 ```
-Copy DNS Info :
+### Copy DNS Info :
 
 ```
 cp --dereference /etc/resolv.conf /mnt/gentoo/etc/
@@ -140,6 +140,35 @@ Installing a Gentoo ebuild repository snapshot from the web
 emerge-webrsync && emerge --sync
 ```
 
+### Choosing the right profile
 
+```
+eselect profile list
+```
+For (KDE) Plasma Desktop Profile :
+
+```
+eselect profile set 8
+```
+
+### Updating the @world set
+
+```
+emerge --ask --verbose --update --deep --newuse @world
+```
+
+### TimeZone :
+
+```
+ls /usr/share/zoneinfo
+```
+
+```
+echo "Asia/Tehran" > /etc/timezone
+```
+
+```
+emerge --config sys-libs/timezone-data
+```
 
 
