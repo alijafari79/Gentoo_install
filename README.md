@@ -170,5 +170,45 @@ echo "Asia/Tehran" > /etc/timezone
 ```
 emerge --config sys-libs/timezone-data
 ```
+### Location specific character set and Language :
+
+```
+nano /etc/locale.gen
+```
+
+Uncomment "en_US.UTF-8 UTF-8" from above file !
+
+```
+locale-gen
+```
+
+```
+eselect locale list
+```
+
+Select (en_US.utf8) :
+
+```
+eselect locale set 4
+```
+
+#### Update environment :
+```
+env-update && source /etc/profile && export PS1="(chroot) ${PS1}"
+```
+
+### Configuring Kernel:
+
+Get the kernel source and compile it using genkernel (The Automatic way :) )
+
+```
+emerge gentoo-sources && emerge genkernel
+```
+
+#### Compile Kernel and Modules :
+
+```
+genkernel all
+```
 
 
