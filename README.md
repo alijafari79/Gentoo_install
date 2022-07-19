@@ -209,6 +209,9 @@ echo "sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE" | tee -a /etc/portage/p
 ```
 emerge gentoo-sources && emerge genkernel
 ```
+```
+cd /usr/src/ && ln -s linux-5.15.52-gentoo linux && cd -
+```
 
 #### Compile Kernel and Modules :
 
