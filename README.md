@@ -201,6 +201,11 @@ env-update && source /etc/profile && export PS1="(chroot) ${PS1}"
 
 Get the kernel source and compile it using genkernel (The Automatic way :) )
 
+Unmasking required packages for the next emerge commands :
+```
+echo "sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE" | tee -a /etc/portage/package.license
+```
+
 ```
 emerge gentoo-sources && emerge genkernel
 ```
