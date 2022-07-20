@@ -2,7 +2,7 @@
 Gentoo Installation Process
 
 ```
-rc-service sshd start
+/etc/init.d/sshd start
 ```
 ```
 passwd root
