@@ -212,6 +212,16 @@ emerge gentoo-sources && emerge genkernel
 ```
 cd /usr/src/ && ln -s linux-5.15.52-gentoo linux && cd -
 ```
+```
+useradd -m -G users,wheel,portage,video -s /bin/bash spos
+```
+```
+passwd spos
+```
+
+```
+emerge sudo
+```
 
 #### Compile Kernel and Modules :
 
