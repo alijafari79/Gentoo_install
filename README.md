@@ -1,5 +1,5 @@
 # Gentoo_install
-Gentoo Installation Process
+Gentoo Installation Process with Openrc init
 
 ```
 /etc/init.d/sshd start
@@ -66,7 +66,7 @@ Now Setup filesystems :
 mkfs.ext4 /dev/sda2 && mkfs.ext4 /dev/sda4 && mkswap /dev/sda3 && swapon /dev/sda3
 ```
 
-Mount neccessary prtitions :
+Mount root & boot prtitions :
 
 ```
 mount /dev/sda4 /mnt/gentoo && mkdir /mnt/gentoo/boot && mount /dev/sda2 /mnt/gentoo/boot
